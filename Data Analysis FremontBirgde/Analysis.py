@@ -2,27 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-'''
-1# Renomeando colunas, renomea posicionalmente
-
-2# eval(coluna0 + coluna1 + coluna2)
-
-3# Seleciona vária colunas, reamostra essas colunas por semana e soma, ou seja
-agrupa por semana, semana0 = soma(movimentações dessa semana)
-LEMBRANDO QUE OS DADOS ESTÃO EM MARCA DE TEMPO DE HORA
-
-
-4# Seleciona várias colunas, reamostra essas colunas por dia e soma, ou seja
-agrupa por dia, dia0 = soma(movimentações dessa semana)
-
-5# Aplica uma janela móvel(rolling), a janela considera 30 períodos de tempo 
-ao redor do ponto atual, o resultado do ponto atual é a soma dos 30 pontos ao redor.
-
-6# Aplica uma janela móvel(rolling), a janela considera 50 períodos de tempo
-ao redor do ponto atual, porém usando o win_type='gaussian', os valores que
-estão mais próximo do centro da janela, tem mais peso do que os valores que estão
-mais distantes. então é feito a soma, o desvio padrão para a soma gaussiana é de 10
-'''
 
 data = pd.read_csv('FremontBrigde.csv', index_col='Date', parse_dates=True)
 #parse_dates transforma o índex em tipo data, para poder trabalhar já no formato correto
