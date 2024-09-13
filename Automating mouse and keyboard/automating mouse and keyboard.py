@@ -5,6 +5,7 @@ from pynput.mouse import Button, Controller as MouseController
 from pynput.keyboard import Controller as KeyboardController
 import threading
 import time
+import pandas
 
 stop_loop = False
 def importar_estoque_json():
